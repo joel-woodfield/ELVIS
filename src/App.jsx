@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import Cnn from "./visualizers/cnn/Cnn.jsx";
@@ -7,13 +7,11 @@ import VisualizerSelector from "./VisualizerSelector.jsx";
 
 function App() {
   return (
-    <BrowserRouter basename="/ELVIS">
-      <Routes>
-        <Route path="/" element={<VisualizerSelector />} />
-        <Route path="/cnn" element={<Cnn />} />
-        <Route path="/optimization" element={<Optimization />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<VisualizerSelector />} />
+      <Route path="/cnn" element={<Cnn />} />
+      <Route path="/optimization" element={<Optimization />} />
+    </Routes>
   );
 }
 
