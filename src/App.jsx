@@ -7,13 +7,13 @@ import VisualizerSelector from "./VisualizerSelector.jsx";
 
 function App() {
   return (
-    <BrowsersRouter basename="/ELVIS">
+    <BrowserRouter basename="/ELVIS">
       <Routes>
         <Route path="/" element={<VisualizerSelector />} />
         <Route path="/cnn" element={<Cnn />} />
         <Route path="/optimization" element={<Optimization />} />
       </Routes>
-    </BrowsersRouter>
+    </BrowserRouter>
   );
 }
 
